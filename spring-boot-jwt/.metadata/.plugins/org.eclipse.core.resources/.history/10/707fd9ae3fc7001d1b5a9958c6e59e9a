@@ -1,0 +1,5 @@
+package com.techgeeknext.service;
+
+public class JwtUserDetailsService {
+
+}

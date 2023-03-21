@@ -1,0 +1,5 @@
+package com.techgeeknext.config;
+
+public class WebSecurityConfig {
+
+}

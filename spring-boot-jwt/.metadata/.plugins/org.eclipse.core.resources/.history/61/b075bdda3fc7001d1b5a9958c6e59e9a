@@ -1,0 +1,5 @@
+package com.techgeeknext.model;
+
+public class JwtRequest {
+
+}

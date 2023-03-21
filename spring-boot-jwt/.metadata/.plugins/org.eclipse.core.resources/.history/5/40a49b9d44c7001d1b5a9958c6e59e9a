@@ -1,0 +1,2 @@
+jwt.secret=techgeeknext
+jwt.get.token.uri=/authenticate
