@@ -1,0 +1,35 @@
+<div *ngIf="isSignedin">
+	<p>Welcome back, {{ signedinUser.username }}!</p>
+
+	<div *ngFor="let greet of greeting">
+		{{greet}}
+	</div>
+
+	<p><a style="text-decoration: underline; cursor: pointer;" (click)="doSignout()"><button 
+		mat-raised-button 
+		color="primary"  
+		style="margin: 15px"
+		routerLinkActive="active">
+		Signout
+	</button></a></p>
+</div>
+
+
+
+<button 
+    mat-raised-button 
+    color="primary" 
+    routerLink="/user" 
+    style="margin: 15px"
+    routerLinkActive="active">
+        User Dashboard
+</button>
+
+
+<button 
+    mat-raised-button 
+    color="primary" 
+    routerLink="/admin" 
+    routerLinkActive="active">
+        Admin Dashboard
+</button>

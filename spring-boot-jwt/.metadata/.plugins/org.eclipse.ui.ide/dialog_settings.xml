@@ -38,6 +38,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\spring-boot-jwt-jpa-master-2\spring-boot-jwt-jpa-master"/>
+			<item value="D:\spring-boot-jwt-master\spring-boot-jwt-master"/>
 			<item value="D:\spring-boot-jwt-without-JPA"/>
 			<item value="D:\spring-boot-jwt\spring-boot-jwt"/>
 		</list>
