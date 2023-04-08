@@ -25,7 +25,7 @@ const routes: Routes = [
   children: [
   {  path: 'view/:id', component: ProductViewComponent },
   {  path: 'edit/:id', component: ProductEditComponent,	canDeactivate: [CountryEditCanDeactivateGuard]  },
-  {  path: 'add', component: ProductAddComponent }
+  {  path: 'add', component: ProductAddComponent,canDeactivate:[CanDeactivateGuard] }
   ]},
   { path: 'contact', component: ContactComponent },
   {path: 'signin', component: SigninComponent},

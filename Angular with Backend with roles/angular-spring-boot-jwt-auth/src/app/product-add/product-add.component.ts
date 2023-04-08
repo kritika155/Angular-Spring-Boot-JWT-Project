@@ -46,7 +46,7 @@ export class ProductAddComponent {
    }
 	canDeactivate(): Observable<boolean> | boolean {
 		if (!this.isAdding && this.productForm.dirty) {
-			return this.dialogService.confirm('Discard unsaved Country?');
+			return this.dialogService.confirm('Discard unsaved Product Values?');
 		}
 		return true;
 	}
