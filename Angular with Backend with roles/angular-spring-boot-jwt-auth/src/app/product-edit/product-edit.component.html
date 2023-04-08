@@ -1,0 +1,9 @@
+<h3>Edit Product</h3>
+<p *ngIf="product"><b>Product Id: {{product.id }} </b></p>
+<form [formGroup]="productForm" (ngSubmit)="onFormSubmit()">
+   <p> Name: <input formControlName="fname" type="text" name="fname" placeholder={{product.name}}> </p>
+   <p> City: <input formControlName="price" type="text" name="price" placeholder={{product.price}}> </p>
+   <p> <button>Update</button> </p>
+</form> 
+
+<button mat-raised-button color="primary" routerLink="/home" routerLinkActive="active">Go Home</button>

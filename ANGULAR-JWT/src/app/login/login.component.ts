@@ -21,7 +21,9 @@ showSpinner: any;
 
   ngOnInit() {
   }
-
+  signup(){
+    this.router.navigate(['/register'])
+  }
   checkLogin() {
     (this.loginservice.authenticate(this.username, this.password).subscribe(
       data => {
@@ -30,7 +32,10 @@ showSpinner: any;
         this.showSpinner=this.invalidLogin;
       },
       error => {
-        this.invalidLogin = true
+        this.invalidLogin = true;
+        if( this.invalidLogin){
+          this.router.navigate(['register'])
+        }
         this.error = error.message;
 
       }

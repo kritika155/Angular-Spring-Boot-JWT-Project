@@ -26,6 +26,10 @@ export class AuthenticationService {
       );
   }
 
+  register(username:any, password:any) {
+    return this.httpClient
+      .post<any>("http://localhost:8080/register", { username, password });
+  }
   isUserLoggedIn() {
     let user = sessionStorage.getItem("username");
     console.log(!(user === null));

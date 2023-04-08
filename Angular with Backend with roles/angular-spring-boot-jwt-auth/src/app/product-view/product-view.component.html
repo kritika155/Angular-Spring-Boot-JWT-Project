@@ -1,0 +1,24 @@
+
+<h1>Product List</h1>
+   <p> This is a protected component </p>
+ 
+   <div class='table-responsive'>
+   <table class='table'>
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Price</th>
+               <th></th>
+               <th></th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr >
+               <td>{{product?.name}}</td>
+               <td>{{product?.price}}</td>
+           </tr>
+       </tbody>
+     </table>
+  </div>
+  <button mat-raised-button color="primary" routerLink="/home" routerLinkActive="active">Go Home</button>
+  <router-outlet></router-outlet>

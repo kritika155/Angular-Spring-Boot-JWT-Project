@@ -1,0 +1,28 @@
+
+
+<div class="container">
+ 
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" [routerLink]="['/']"><strong> <p>Welcome to the User Dashboard!</p> </strong></a>
+        </div>
+        <ul class="nav navbar-nav navStyle">
+     
+            <li><a [routerLink]="['home']">Home</a></li>
+            <li><a [routerLink]="['product']">Product</a></li>
+            <li><a [routerLink]="['contact']">Contact us</a></li>
+            <li><a [routerLink]="['login']">Login</a></li>
+            <li>  
+              <p><a style="text-decoration: underline; cursor: pointer;" (click)="doSignout()">
+              Signout</a></p>
+          </li>
+            
+        </ul>
+      </div>
+    </nav>
+    <button mat-raised-button color="primary" routerLink="/home" routerLinkActive="active">Go Home</button>
+     <router-outlet></router-outlet>
+     
+    </div>
+

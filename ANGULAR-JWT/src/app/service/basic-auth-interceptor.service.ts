@@ -15,7 +15,9 @@ export class BasicAuthHtppInterceptorService implements HttpInterceptor {
       let username:any=sessionStorage.getItem('token');
       req = req.clone({
         setHeaders: {
-          Authorization: username
+          'Content-Type': 'application/json',
+          Authorization:`Bearer ${username}`
+          // Authorization: username
         }
       })
     }
